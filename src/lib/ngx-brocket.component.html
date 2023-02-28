@@ -1,0 +1,6 @@
+<div>
+  <ng-container [ngSwitch]="game.kind">
+    <lib-single *ngSwitchCase="BrocketGameKind.SingleElimination" [matches]="game.matches"></lib-single>
+    <lib-double *ngSwitchCase="BrocketGameKind.DoubleElimination" [matches]="game.matches"></lib-double>
+  </ng-container>
+</div>
